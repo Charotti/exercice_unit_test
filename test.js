@@ -1,6 +1,11 @@
 const even = require("./math");
 
-test("if number is even", () => {
+test("if provided parameter is even return true", () => {
   const result = even(4);
   expect(result).toBe(true);
+});
+
+test("if provided parameter is odd number return false", () => {
+  const result = even(3);
+  expect(result).toBe(false);
 });
